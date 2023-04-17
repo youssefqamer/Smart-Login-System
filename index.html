@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smart Login System </title>
+</head>
+<body>
+    <div class="home-page hidden-form ">
+        <div class="nav-bar shadow position-fixed w-100">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                  <div class="container">
+                    <a class="navbar-brand text-white" href="#" >SMART LOGIN</a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                          
+                            <li class="nav-item ">
+                                <a href="#" class="btn btn-outline-warning text-secondary logout-btn">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="home vh-100  d-flex justify-content-center align-items-center text-center">
+            <div class="container ">
+                <div class="w-50 m-auto bg shadow p-5">
+                    <p class=" fs-2 text-info" id="welcome"></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<div class="container">
+    <div class="m-auto my-5 shadow bg py-5  text-center px-4 signup-form ">
+        <h1 class="fw-bold">Smart Login System</h1>
+        
+            <input type="text" placeholder="Enter your name" class="form-control my-4 p-2" id="username" required>
+            <input type="email" placeholder="Enter your e-mail" class="form-control my-4 p-2" id="email" required>
+            <input type="password" placeholder="Enter your password" class="form-control my-4 p-2" id="password" required>
+           <div class="alert alert-danger d-none" id="signUpAlert">All inputs are required</div>
+            <button class="btn signup  w-100"id="signup">Sign UP</button>
+            <p class="my-3 text-white fs-5">you have an account? <a href="#" class="text-white" id="signin">Sign in</a></p>
+
+    </div>
+    <div class="m-auto my-5 shadow bg py-5  text-center px-4 signin-form hidden-form ">
+    <h1 class="fw-bold">Smart Login System</h1>
+    <input type="email" placeholder="Enter your e-mail" class="form-control my-4 p-2" id="emial-login" required>
+    <input type="password" placeholder="Enter your password" class="form-control my-4 p-2" id="password-login" required>
+    <div class="alert alert-danger d-none" id="signInAlert">All inputs are required</div>
+    <div class="alert alert-danger d-none" id="errorData">Error in Email or password</div>
+    <a class="btn signup  w-100" href="#"  id="login">log in</a>
+    <p class="my-3 text-white fs-5">Don’t have an account? <a href="" class="text-white" >Sign up</a></p>
+</div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
